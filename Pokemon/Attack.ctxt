@@ -9,6 +9,4 @@ comment3.params=
 comment3.target=java.lang.String\ getName()
 comment4.params=
 comment4.target=int\ getPower()
-comment5.params=
-comment5.target=void\ act()
-numComments=6
+numComments=5
