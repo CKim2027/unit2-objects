@@ -16,11 +16,15 @@ public class StringSpeed {
         }
         long plusTime = System.nanoTime() - start;
 
-        // 2. TODO: build the same text with a StringBuilder.
-        //    StringBuilder sb = new StringBuilder();  then  sb.append("t");
+        // 2. Build the same text with a StringBuilder.
+        //    StringBuilder sb = new StringBuilder(); then sb.append("t");
         //    At the end: String t = sb.toString();
         start = System.nanoTime();
-        String t = "";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            sb.append("t");
+        }
+        String t = sb.toString();
         long builderTime = System.nanoTime() - start;
 
         System.out.println("Same text? " + s.equals(t));
